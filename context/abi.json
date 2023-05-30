@@ -1,0 +1,181 @@
+[
+    {
+      "type": "constructor",
+      "name": "",
+      "inputs": [],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "donate",
+      "inputs": [
+        {
+          "type": "string",
+          "name": "_name",
+          "internalType": "string"
+        }
+      ],
+      "outputs": [],
+      "stateMutability": "payable"
+    },
+    {
+      "type": "function",
+      "name": "donorHistory",
+      "inputs": [
+        {
+          "type": "address",
+          "name": "",
+          "internalType": "address"
+        },
+        {
+          "type": "uint256",
+          "name": "",
+          "internalType": "uint256"
+        }
+      ],
+      "outputs": [
+        {
+          "type": "uint256",
+          "name": "ethDonation",
+          "internalType": "uint256"
+        },
+        {
+          "type": "uint256",
+          "name": "usdDonation",
+          "internalType": "uint256"
+        },
+        {
+          "type": "uint256",
+          "name": "timestamp",
+          "internalType": "uint256"
+        },
+        {
+          "type": "string",
+          "name": "name",
+          "internalType": "string"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "donorsList",
+      "inputs": [
+        {
+          "type": "uint256",
+          "name": "",
+          "internalType": "uint256"
+        }
+      ],
+      "outputs": [
+        {
+          "type": "uint256",
+          "name": "ethDonation",
+          "internalType": "uint256"
+        },
+        {
+          "type": "uint256",
+          "name": "usdDonation",
+          "internalType": "uint256"
+        },
+        {
+          "type": "uint256",
+          "name": "timestamp",
+          "internalType": "uint256"
+        },
+        {
+          "type": "string",
+          "name": "name",
+          "internalType": "string"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "getDonars",
+      "inputs": [],
+      "outputs": [
+        {
+          "type": "tuple[]",
+          "name": "",
+          "components": [
+            {
+              "type": "uint256",
+              "name": "ethDonation",
+              "internalType": "uint256"
+            },
+            {
+              "type": "uint256",
+              "name": "usdDonation",
+              "internalType": "uint256"
+            },
+            {
+              "type": "uint256",
+              "name": "timestamp",
+              "internalType": "uint256"
+            },
+            {
+              "type": "string",
+              "name": "name",
+              "internalType": "string"
+            }
+          ],
+          "internalType": "struct Donations.Donor[]"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "getETHPrice",
+      "inputs": [],
+      "outputs": [
+        {
+          "type": "uint256",
+          "name": "",
+          "internalType": "uint256"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "getTotalDonationsInEth",
+      "inputs": [
+        {
+          "type": "address",
+          "name": "donor",
+          "internalType": "address"
+        }
+      ],
+      "outputs": [
+        {
+          "type": "uint256",
+          "name": "",
+          "internalType": "uint256"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "getTotalDonationsInUsd",
+      "inputs": [
+        {
+          "type": "address",
+          "name": "donor",
+          "internalType": "address"
+        }
+      ],
+      "outputs": [
+        {
+          "type": "uint256",
+          "name": "",
+          "internalType": "uint256"
+        }
+      ],
+      "stateMutability": "view"
+    }
+  ]
